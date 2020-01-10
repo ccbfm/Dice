@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.iigo.library.DiceView
+        android:id="@+id/dice_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:bgColor="@android:color/white"
+        app:borderColor="@color/colorPrimary"
+        app:number="one"
+        app:pointColor="@color/colorPrimary" />
+</merge>

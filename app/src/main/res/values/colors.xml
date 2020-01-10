@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="color_spinner">#7D7D7D</color>
+    <color name="color_spinner_record">#9FB6CD</color>
+    <color name="color_dividing_line">#383838</color>
+</resources>
