@@ -17,6 +17,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.ccbfm.screen.adapter.ScreenAdapter;
 import com.iigo.library.DiceView;
 
 import java.util.Random;
@@ -35,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mDiceRecord;
     private Handler mHandler;
 
-    @Override
+    @Override@ScreenAdapter
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
