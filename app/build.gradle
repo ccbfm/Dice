@@ -38,6 +38,14 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            //改名字
+            def type = outputFileName.contains("debug") ? "debug" : "release"
+            outputFileName = "Dice_${type}_${variant.versionName}.apk"
+        }
+    }
 }
 
 dependencies {
