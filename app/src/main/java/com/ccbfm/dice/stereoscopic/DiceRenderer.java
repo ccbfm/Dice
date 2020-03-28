@@ -102,10 +102,16 @@ public class DiceRenderer implements GLSurfaceView.Renderer {
         }
     }
 
+    private static final int MAX_CLICK_TIME = 1000;
+    private long mStartTime;
+
     public boolean onTouchEvent(MotionEvent event) {
         float y = event.getY();
         float x = event.getX();
         switch (event.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+                mStartTime = System.currentTimeMillis();
+                break;
             case MotionEvent.ACTION_MOVE:
                 float dy = y - mPreviousY;
                 float dx = x - mPreviousX;
@@ -120,8 +126,11 @@ public class DiceRenderer implements GLSurfaceView.Renderer {
                 mEnvironment.initCamera(mTargetElevation, mTargetAzimuth, 0, 1, 0);
                 break;
             case MotionEvent.ACTION_UP:
-                for (Entity entity : mEntities) {
-                    entity.setVelocity();
+                long endTime = System.currentTimeMillis();
+                if (endTime - mStartTime < MAX_CLICK_TIME) {
+                    for (Entity entity : mEntities) {
+                        entity.setVelocity();
+                    }
                 }
                 break;
         }

@@ -1,14 +1,10 @@
 package com.ccbfm.dice.stereoscopic;
 
 import android.opengl.Matrix;
-import android.util.Log;
-
-import com.ccbfm.journal.annotation.Journal;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
-import java.util.Arrays;
 
 import javax.vecmath.Quat4f;
 
@@ -36,7 +32,7 @@ public class Environment {
     private static final float TARGET_Z = 0f;
     private static final float TARGET_DISTANCE = 30f;//摄像机和目标的距离
     public static final float TARGET_ELEVATION = 90f;//仰角
-    public static final float TARGET_AZIMUTH = 180f;//方位角
+    public static final float TARGET_AZIMUTH = 0f;//方位角
 
     public Environment() {
         mCurrentMatrix = new float[16];
