@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dice_stereoscopic_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="加载中。。。"
+        android:textSize="24sp" />
+
+    <com.ccbfm.dice.widget.ChooseGilrsProgressView
+        android:id="@+id/dice_stereoscopic_progress"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:padding="10dp" />
+
+
+</FrameLayout>

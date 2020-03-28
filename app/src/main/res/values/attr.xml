@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChooseGilrsProgressView">
+        <attr name="pborderWidth" format="dimension" />
+        <attr name="pdegrees" format="float|reference" />
+    </declare-styleable>
+</resources>

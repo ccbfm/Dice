@@ -46,6 +46,7 @@ android {
             outputFileName = "Dice_${type}_${variant.versionName}.apk"
         }
     }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
 }
 
 dependencies {

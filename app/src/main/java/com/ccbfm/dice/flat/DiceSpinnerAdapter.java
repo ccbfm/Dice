@@ -1,4 +1,4 @@
-package com.ccbfm.dice;
+package com.ccbfm.dice.flat;
 
 import android.content.Context;
 import android.view.Gravity;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+
+import com.ccbfm.dice.R;
 
 public class DiceSpinnerAdapter extends ArrayAdapter<String> {
 

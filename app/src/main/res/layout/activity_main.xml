@@ -4,22 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="8dp"
-    tools:context=".MainActivity">
+    tools:context=".flat.DiceActivity">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_scanning_bg"
+        android:onClick="onClickModeFlat"
+        android:text="平面"
+        android:textSize="24sp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="onClickModeStereoscopic"
+        android:background="@drawable/button_scanning_bg"
+        android:text="立体"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/dice_record"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="80dp"
-        android:gravity="bottom" />
-
-    <LinearLayout
-        android:id="@+id/dice_view_content"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginBottom="80dp"
         android:gravity="center"
-        android:orientation="vertical" />
+        android:layout_gravity="center_horizontal"
+        android:textSize="24sp"
+        android:text="选择骰子模式与个数" />
 
     <Spinner
         android:id="@+id/dice_spinner"
@@ -29,11 +44,4 @@
         android:background="@color/color_spinner"
         android:popupBackground="@color/color_spinner" />
 
-    <Spinner
-        android:id="@+id/dice_spinner_record"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="end|bottom"
-        android:background="@color/color_spinner_record"
-        android:popupBackground="@color/color_spinner_record" />
 </FrameLayout>
